@@ -78,7 +78,7 @@ def _run_loop(agent: Agent, *, show_sql: bool, page_size: int) -> None:
 
     while True:
         try:
-            question = console.input("[bold green]>[/bold green] ").strip()
+            question = input("> ").strip()
         except EOFError:
             break
 
